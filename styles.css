@@ -1,0 +1,150 @@
+/* Reset some default styles for better cross-browser consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Apply Montserrat font globally */
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center; /* This centers the text globally */
+}
+
+/* Style for the Copy button */
+.copy-icon {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* Text color */
+  padding: 8px 16px; /* Add some padding around the text */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold; /* Make the text bold */
+  font-family: "Montserrat", sans-serif; /* Optional: Customize the font */
+  text-align: center; /* Center the text */
+  display: inline-block; /* Make it an inline element */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.copy-icon:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px; /* Give space for the footer */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  resize: vertical;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 72, 255, 0.3);
+}
+
+button {
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.7em;
+  color: #333;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.3em;
+  color: #000000;
+  margin-top: 10px;
+}
+
+footer {
+  font-size: 1em;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+  margin-top: auto; /* This pushes the footer to the bottom */
+  width: 100%;
+  padding: 10px 0; /* Adds padding to the footer for spacing */
+}
+
+/* Make the form responsive */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  textarea,
+  input,
+  select {
+    font-size: 1em;
+  }
+}
